@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Joshua Joseph's Portfolio</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <!-- JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Moment.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+    <!-- Materialize CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <!-- Materialize JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+    <!-- Font Awsome-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ"
+        crossorigin="anonymous">
+    <!-- Animate on scroll -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Modern+Antiqua" rel="stylesheet">
+    <!-- Our actual styles-->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="u-bgcolor-blue">
+            <div class="nav-wrapper container">
+                <a href="#!" class="brand-logo">JJO</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul class="right hide-on-med-and-down">
+                    <li>
+                        <a href="#" class="u-text-size">About</a>
+                    </li>
+                    <li>
+                        <a href="#" class="u-text-size">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#" class="u-text-size">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#" class="u-text-size">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#" class="u-text-size">Blog</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <ul class="sidenav" id="mobile-demo">
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Portfolio</a>
+            </li>
+            <li>
+                <a href="#">Skills</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+            <li>
+                <a href="#">Blog</a>
+            </li>
+        </ul>
+    </header>
+
+    <main>
+
+        <section class="jumbotron push">
+            <img src="./assets/img/profile-picture.jpg" alt="Profile picture" class="profile-picture">
+            <div class="jumbo-content">
+                <p class="u-center-text">Hello, I'm
+                    <span class="u-color-black">Joshua Joseph</span>,</p>
+                <p>a full-stack web developer.</p>
+            </div>
+        </section>
+
+        <section id="about" class="container push section-bg-color">
+            <h2 class="about u-center-text section-title">About</h2>
+            <div class="section-content">
+                <p class="about-highlight">Detail oriented developer with a passion for problem solving and intuitive design.</p>
+                <p>I'm a Chicago-based junior level web-developer, currently enrolled in a full-stack web development bootcamp
+                    through Northwestern University.</p>
+                <p>What do I want to focus on when out? Front-End, User Interface/Experience</p>
+                <p>In my spare time I like to play at video-game tournaments, help at animal shelters, and help in the kitchen.</p>
+
+            </div>
+        </section>
+
+        <section id="portfolio" class="container push section-bg-color">
+            <h2 class="portfolio u-center-text section-title">Portfolio</h2>
+            <div class="section-content">
+                <div class="row">
+                    <div class="col s4">
+                        <div class="u-position-relative">
+                            <a href="https://chaelor.github.io/WordGuess/">
+                                <img src="./assets/img/ow.jpg" alt="Word Guess Game" class="portfolio-images" />
+                                <h3 class="image-absolute">Overwatch Guess!</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col s4">
+                        <div class="u-position-relative">
+                            <a href="https://chaelor.github.io/unit-4-game/">
+                                <img src="assets/img/winston.png" alt="Overwatch Character Choice Game" class="portfolio-images" />
+                                <h3 class="image-absolute">Overwatch Character Game</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col s4">
+                        <div class="u-position-relative">
+                            <a href="https://chaelor.github.io/TriviaGame/">
+                                <img src="assets/img/question_mark.jpeg" alt="Trivia Game" class="portfolio-images" />
+                                <h3 class="image-absolute">Random Trivia</h3>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+                <div class="row">
+                    <div class="col s4">
+                        <div class="u-position-relative">
+                            <a href="https://chaelor.github.io/giphyplayground/">
+                                <img src="./assets/img/giphy.jpg" alt="Giphy Api Practice" class="portfolio-images" />
+                                <h3 class="image-absolute">Giphy Api</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col s4">
+                        <div class="u-position-relative">
+                            <a href="https://chaelor.github.io/train-scheduling/">
+                                <img src="./assets/img/trainscheduler.jpeg" alt="Train Scheduler" class="portfolio-images" />
+                                <h3 class="image-absolute">Train Scheduler</h3>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col s4">
+                        <div class="u-position-relative">
+                            <img src="assets/img/placeholder.png" alt="PlaceHolder6" class="portfolio-images" />
+                            <h3 class="image-absolute">Placeholder</h3>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section id="skills" class="container push section-bg-color">
+            <h2 class="skills u-center-text section-title">Skills</h2>
+            <div class="section-content">
+
+            </div>
+        </section>
+
+        <section id="contact" class="container push section-bg-color">
+            <h2 class="contact u-center-text section-title">Contact</h2>
+            <div class="section-content">
+
+            </div>
+        </section>
+
+        <section id="blog" class="container push section-bg-color">
+            <h2 class="blog u-center-text section-title">Blog</h2>
+            <div class="section-content">
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer u-position-relative u-bgcolor-blue">
+        <div class="container">
+            <div class="row footer-content">
+                <p class="logo-box u-position-absolute">
+                    <a href="https://github.com/Chaelor" target="_blank">
+                        <img src="./assets/img/github.svg" alt="github logo" class="logo">
+                    </a>
+                    <a href="https://www.facebook.com/joshua.joseph.77" target="_blank">
+                        <img src="./assets/img/facebook.svg" alt="facebook logo" class="logo">
+                    </a>
+                    <a href="https://twitter.com/chaelor" target="_blank">
+                        <img src="./assets/img/twitter.svg" alt="twitter logo" class="logo">
+                    </a>
+                    <a href="https://www.linkedin.com/in/joshua-joseph-380968163/" target="_blank">
+                        <img src="./assets/img/linkedin.svg" alt="linkedin logo" class="logo">
+                    </a>
+                </p>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2014 Copyright Text
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="./assets/js/app.js"></script>
+
+</html>

@@ -1,0 +1,158 @@
+body {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  font-size: 2rem;
+}
+
+html{
+  font-size: 62.5%;
+}
+
+main {
+  flex: 1 0 auto;
+}
+
+a {
+  cursor: pointer;
+}
+
+h2{
+  margin:0;
+  padding:0;
+}
+/*****************
+* Utility
+*/
+.u-bgcolor-black{
+  background-color: black;
+}
+
+.u-bgcolor-blue{
+  background-color: #26c6da;
+}
+
+.u-text-size{
+  font-size: 1.5rem;
+}
+
+.u-position-relative {
+  position: relative;
+}
+
+.u-center-text {
+  text-align: center;
+}
+
+.u-color-black{
+  color: rgb(0, 255, 0);
+}
+
+.push{
+  margin-bottom: 10rem;
+}
+/*****************
+* Navigation
+*/
+nav{
+  border-bottom: .5px solid black;
+}
+
+/*****************
+* Jumbotron
+*/
+.jumbotron{
+  height: 70rem;
+  background-image: linear-gradient(to bottom right, #26c5da5e,#26c6da5e),url("../img/bg1.JPG");
+  background-size: cover;
+  position: relative;
+}
+
+.profile-picture{
+  width: 45rem;
+  height: 45rem;
+  border-radius: 300px;
+  position: absolute;
+  top:40%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  border: .5rem solid black;
+}
+
+.jumbo-content{
+  position: absolute;
+  top:85%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-family: 'Modern Antiqua', cursive;
+  font-size: 3rem;
+  line-height: 1.5;
+}
+
+/*****************
+* Main
+*/
+.section-title{
+  border-bottom: 1px, solid, grey;
+  color: #0aa9be;
+  margin-bottom: 1rem;
+  font-size: 5rem;
+}
+
+.section-bg-color{
+  background-color: #f7f7f7;
+}
+
+.section-content{
+  font-size: 4rem;
+}
+
+/*****************
+* About
+*/
+.about-highlight{
+  border-left: 5px solid #0aa9be;
+  background-color: #dddddd;
+}
+/*****************
+* Portfolio  
+*/
+.portfolio-images{
+  height: 27.5rem;
+  width: 27.5rem;
+}
+
+.image-absolute{
+  position: absolute;
+  z-index: 5;
+  top:70%;
+  text-decoration: none;
+  background-color: #ffffff;
+  width: 27.5rem;
+  text-align: center;
+  color: #26c6da;
+  font-size: 1.5vw;
+  padding:.5rem;
+}
+/*****************
+* Footer  
+*/
+.footer-content{
+  height: 5rem;
+}
+
+.logo-box{
+  width: 30rem;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top:30%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+
+.logo{
+  width: 5rem;
+  height: 5rem;
+}
