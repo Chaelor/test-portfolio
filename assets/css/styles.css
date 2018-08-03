@@ -51,6 +51,11 @@ h2{
 .push{
   margin-bottom: 10rem;
 }
+
+.push-small{
+  margin-bottom: 2rem;
+  display:none;
+}
 /*****************
 * Navigation
 */
@@ -66,6 +71,7 @@ nav{
   background-image: linear-gradient(to bottom right, #26c5da5e,#26c6da5e),url("../img/bg1.JPG");
   background-size: cover;
   position: relative;
+  background-position: top;
 }
 
 .profile-picture{
@@ -116,7 +122,14 @@ nav{
 /*****************
 * About
 */
-.about-content-highlight{
+.about-content-highlight-main{
+  border-left: 5px solid #0aa9be;
+  background-color: #cacaca;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+
+.about-content-highlight-sub{
   border-left: 5px solid #0aa9be;
   background-color: #cacaca;
   margin-bottom: 2rem;
@@ -159,7 +172,7 @@ nav{
   top:70%;
   text-decoration: none;
   background-color: #26c6da;
-  width: 27.5rem;
+  width: 100%;
   text-align: center;
   color: white;
   font-size: 1.5rem;
@@ -171,11 +184,64 @@ nav{
 .portfolio-content-single:hover{
   z-index:10;
   transform: translateY(-.5rem) scale(1.1);
-  animation: all .5s;
+  animation: all .5s; 
   box-shadow: 5px 5px 5rem #26c6da;
 }
+/*****************
+* Skills
+*/
+.skills-content{
+  margin: 0 auto;
+  max-width: 75rem;
+}
 
+.skills-content-header{
+  text-align: center;
+  border-top: 1px solid #26c6da;
+  border-bottom: 1px solid #26c6da;
+  padding: 2rem 0;
+}
 
+.skills-content-area{
+  margin: 0 auto;
+}
+.skills-content-img{
+  max-width: 15rem;
+  max-height: 15rem;
+  margin-bottom: 4rem;
+  padding: 0 1rem;
+}
+
+.skills-content-single{
+  position:relative;
+  display:inline-block;
+  -webkit-box-align:center;
+  -webkit-box-pack:center;
+}
+
+.skills-content-description{
+  font-size: 1.5vw;
+}
+.tiny-icon{
+  position: absolute;
+  bottom: 10%;
+  left:37%;
+}
+.small-icon{
+  position: absolute;
+  bottom: 10%;
+  left:30%;
+}
+.medium-icon{
+  position: absolute;
+  bottom: 7%;
+  left:20%;
+}
+.large-icon{
+  position: absolute;
+  bottom: 7%;
+  left:10%;
+}
 /*****************
 * Contact
 */
@@ -191,7 +257,7 @@ input:focus{
 }
 
 .form{
-  max-width: 82.5rem;
+  width: 85;
   margin: 0 auto;
 }
 
@@ -227,4 +293,185 @@ input:focus{
 .logo{
   width: 5rem;
   height: 5rem;
+}
+
+
+@media only screen and (max-width: 1250px) {
+  .portfolio-image, .portfolio-content-image{
+    max-width: 25rem;
+    max-height: 25rem;
+    position: relative;
+    height:100%;
+    width:100%;
+  }
+
+  .portfolio-content{
+    margin: 0 auto;
+    width: 750px;
+  }
+  .large-icon{
+    left:20%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .portfolio-image, .portfolio-content-image{
+    max-width: 20rem;
+    max-height: 20rem;
+    position: relative;
+    height:100%;
+    width:100%;
+  }
+
+  .portfolio-content{
+    margin: 0 auto;
+    width: 600px;
+  }
+  .large-icon{
+    left:22%;
+  }
+  .medium-icon{
+    left:30%;
+  }
+  form{
+    width: 80%
+  }
+}
+
+@media only screen and (max-width: 975px) {
+  .jumbo-content{
+    font-size: 3.5rem;
+  }
+  form{
+    width: 80%
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .jumbo-content{
+    font-size: 3rem;
+  }
+  .skills-content-description{
+    font-size: 2rem;
+  }
+}
+
+
+@media only screen and (max-width: 750px) {
+  .portfolio-image, .portfolio-content-image{
+    max-width: 15rem;
+    max-height: 15rem;
+    position: relative;
+    height:100%;
+    width:100%;
+  }
+
+  .portfolio-content{
+    margin: 0 auto;
+    width: 450px;
+  }
+  
+  .portfolio-h3{
+    padding:.5rem;
+    font-size: 1rem;
+  }
+  .jumbo-content{
+    font-size: 2.5rem;
+  }
+
+}
+
+@media only screen and (max-width: 660px) {
+  .jumbo-content{
+    font-size: 3rem;
+  }
+  .skills-content-description{
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .jumbo-content{
+    font-size: 2rem;
+    top: 78%;
+  }
+  .profile-picture{
+    width: 35rem;
+    height: 35rem;
+  }
+  .portfolio-image, .portfolio-content-image{
+    max-width: 20rem;
+    max-height: 20rem;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .portfolio-content{
+    margin: 0 auto;
+    width: 200px;
+  }
+  
+  .portfolio-h3{
+    padding:.5rem;
+    font-size: 1rem;
+  }
+  .portfolio-content-row{
+    display:block;
+  }
+  .push-small{
+    display:block;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .jumbo-content{
+    font-size: 2rem;
+  }
+  .profile-picture{
+    width: 35rem;
+    height: 35rem;
+  }
+  .portfolio-image, .portfolio-content-image{
+    max-width: 20rem;
+    max-height: 20rem;
+    height: 100%;
+    width: 100%;
+  }
+  
+  .portfolio-content{
+    margin: 0 auto;
+    width: 200px;
+  }
+  
+  .portfolio-h3{
+    padding:.5rem;
+    font-size: 1rem;
+  }
+  .portfolio-content-row{
+    display:block;
+  }
+  .push-small{
+    display:block;
+  }
+  .about-content-p:not(:last-child){
+    margin-bottom: 3rem;
+  }
+  .about-content-highlight-main{
+    margin-bottom: 3rem;
+  }
+}
+
+@media only screen and (max-width: 380px) {
+  .jumbo-content{
+    font-size: 2.5rem;
+  }
+  .about-content{
+    font-size: 2.5rem;
+  }
+  .skills-content-description{
+    font-size: 2rem;
+  }
+  form{
+    width: 80%;
+  }
 }
